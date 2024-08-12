@@ -1,0 +1,32 @@
+@import "./reset";
+@import "./mixins";
+@import "./constants";
+
+@import "./blocks/header";
+@import "./blocks/info";
+@import "./blocks/services";
+@import "./blocks/reasons";
+@import "./blocks/video";
+@import "./blocks/comments";
+@import "./blocks/togo";
+@import "./blocks/footer";
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url("/fonts/Rubik-Bold.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy Regular";
+    src: url("/fonts/Gilroy-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy Bold";
+    src: url("/fonts/Gilroy-Bold.woff2");
+}
+
+body {
+    color: $base-color; 
+    font-family: "Gilroy Regular";
+}

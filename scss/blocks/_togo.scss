@@ -1,0 +1,20 @@
+.togo {
+    display: flex;
+    height: 169px;
+    background-color: #68D585;
+    align-items: center;
+    column-gap: 35px;
+
+    &__text {
+        font-family: "Gilroy Bold";
+        @include font(32px, 44px, -1.2px);
+        color: $white-color;
+        margin-left: 537px;
+    }
+
+    &__button {
+        @include btn(202px, 50px, $white-color);
+        font-family: "Gilroy Bold";
+        @include font(17px, 32px, -0.6px);
+    }
+}

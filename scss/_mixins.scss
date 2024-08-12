@@ -1,0 +1,13 @@
+@mixin font($size, $height, $ls) {
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $ls;
+}
+
+@mixin btn($width, $height, $grcolor) {
+    width: $width;
+    height: $height;
+    border: none;
+    background-color: $grcolor;
+    border-radius: 7px;
+}

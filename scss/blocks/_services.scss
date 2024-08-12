@@ -1,0 +1,59 @@
+.services {
+    background-color: #F4F7FA;
+    padding: 86px 245px 111px 245px;
+
+    &__main {
+        width: 769px;
+        text-align: center;
+        margin: 0 0 62px 170px;
+
+        &__title {
+            font-family: "Gilroy Bold";
+            @include font(36px, 48px, -1.2px);
+            margin-bottom: 18px;
+        }
+
+        &__text {
+            width: 589px;
+            @include font(19px, 32px, -0.2px);
+            margin-left: 90px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__card {
+        &__title {
+            font-family: "Gilroy Bold";
+            @include font(21px, 32px, -0.5px);
+            margin-bottom: 21px;
+        }
+
+        &__img {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            width: 333px;
+            @include font(17px, 29px, -0.2px);
+            margin-bottom: 15px;
+        }
+
+        &__link {
+            font-family: "Gilroy Bold";
+            position: relative;
+            @include font(17px, 32px, -0.6px);
+            color: #473BF0;
+
+            &::after {
+                content: url("/assets/icons/service-after.png");
+                position: absolute;
+                right: -40px;
+                top: -5px;
+            }
+        }
+    }
+}

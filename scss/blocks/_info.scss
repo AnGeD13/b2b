@@ -1,0 +1,54 @@
+.info {
+    display: flex;
+    margin: 0 0 120px 244px; 
+
+    &__content {
+        width: 346px;
+        height: 290px;
+        margin: 185px 56px 0 0;
+    }
+
+    &__title {
+        font-family: "Gilroy Bold";
+        @include font(32px, 44px, -1.2px);
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        width: 339px;
+        @include font(19px, 32px, -0.2px);
+        margin-bottom: 31px;
+    }
+
+    &__button {
+        @include btn(203px, 50px, #473BF0);
+        font-family: "Gilroy Bold";
+        @include font(17px, 32px, -0.6px);
+        color: white;
+    }
+
+    &__image {
+        margin: 120px 77px 0 0;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 128px;
+
+        &__cart {
+            width: 314px;
+
+            &__title {
+                font-family: "Gilroy Bold";
+                @include font(32px, 44px, -1.2px);
+                margin-bottom: 10px;
+            }
+
+            &__text {
+                @include font(19px, 32px, -0.2px);
+            }
+        }
+    }
+}

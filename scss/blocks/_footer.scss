@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    height: 496px;
+    background-color: $base-color;
+    color: white;
+    padding: 122px 245px 128px 245px;
+    box-sizing: border-box;
+
+    &__main {
+        width: 274px;
+        height: 209px;
+        margin-right: 101px;
+
+        &__title {
+            font-family: "Rubik Bold";
+            @include font(28px, 33.18px, -0.16px);
+            margin-bottom: 36px;
+        }
+
+        &__text {
+            width: 274px;
+            opacity: 0.65;
+            @include font(15px, 26px, -0.1px);
+            margin-bottom: 44px;
+        }
+
+        &__links {
+            display: flex;
+            column-gap: 24px;
+        }
+    }
+
+    &__categories {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &__item {
+
+            &__title {
+                @include font(15px, 26px, -0.1px);
+                opacity: 0.65;
+                margin-bottom: 20px;
+            }
+
+            &__list {
+                @include font(17px, 40px, -0.2px);
+            }
+        }
+    }
+}

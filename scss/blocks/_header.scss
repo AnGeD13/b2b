@@ -1,0 +1,122 @@
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 18px;
+    margin: 0 46px 0 48px;
+
+    &__main {
+        font-family: "Rubik Bold";
+        @include font(28px, 33.18px, -0.16px);
+        color: $base-color;
+        margin-top: 3px;
+    }
+
+    &__right {
+        display: flex;
+        flex-wrap: nowrap;
+        font-family: "Gilroy Bold";
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        width: 333px;
+        margin-right: 43px;
+    }
+
+    &__item {
+        font-weight: 700;
+        @include font(15px, 26px, -0.1px);
+        margin-top: 11px;
+    }
+
+    &__button {
+        @include btn(168px, 45px, #473BF0);
+        color: white;
+        font-family: "Gilroy Bold";
+        @include font(17px, 20.55px, -0.5px);
+        text-align: center;
+    }
+}
+
+.header {
+    background-image: url("/assets/images/header-bg.png");
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 213px 0 243px;
+    }
+
+    &__content {
+        margin-top: 124px;
+        width: 474px;
+        height: 362px;
+    }
+
+    &__title {
+        width: 473px;
+        font-family: "Gilroy Bold";
+        @include font(48px, 58px, -1.8px);
+        margin: 0 0 15px 1px;
+    }
+
+    &__text {
+        width: 434px;
+        @include font(19px, 32px, -0.2px);
+        margin: 0 0 30px 1px;
+    }
+
+    &__button {
+        @include btn(200px, 59px, #473BF0);
+        color: white;
+        display: block;
+        margin: 0 0 28px 1px;
+        font-family: "Gilroy Bold";
+        @include font(17px, 32px, -0.6px);
+        text-align: center;
+    }
+
+    &__link {
+        font-family: "Gilroy Bold";
+        @include font(13px, 15.72px, 1.63px);
+        color: $base-color;
+        text-transform: uppercase;
+        margin-left: 28px;
+    }
+
+    &__img {
+        width: 467px;
+        height: 565px;
+        margin-top: 50px;
+    }
+
+    &__footer {
+        height: 96px;
+        display: flex;
+        align-items: center;
+        background-color: $base-color;
+        color: white;
+        @include font(17px, 29px, -0.2px);
+
+        &__link {
+            color: white;
+            text-decoration: underline;
+        }
+
+        &__text {
+            position: relative;
+            margin-left: 549px;
+        }
+
+        &__text::before {
+            content: url("/assets/icons/header-video.png");
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 2px;
+            left: -35px;
+        }
+    }
+}
